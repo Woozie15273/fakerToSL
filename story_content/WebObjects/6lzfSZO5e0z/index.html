@@ -1,0 +1,26 @@
+<script type="module">
+import { fakerEN, fakerDE, fakerZH_CN } from 'https://esm.sh/@faker-js/faker';
+
+class newMember {
+  constructor(faker) {
+    this.imageUrl = faker.image.url();
+    this.avatarUrl = faker.image.avatar();
+    this.fullName = faker.person.fullName();
+    this.phoneNumber = faker.phone.number();
+    this.address = `${faker.location.streetAddress()}, ${faker.location.city()}, ${faker.location.state()}`;
+  }
+}
+
+const teamMemberEN = new newMember(fakerEN);
+const teamMemberDE = new newMember(fakerDE);
+const teamMemberZH_CN = new newMember(fakerZH_CN);
+
+localStorage.setItem('teamMemberEN', JSON.stringify(teamMemberEN));
+localStorage.setItem('teamMemberDE', JSON.stringify(teamMemberDE));
+localStorage.setItem('teamMemberZH_CN', JSON.stringify(teamMemberZH_CN));
+
+//console.log('English:', teamMemberEN);
+//console.log('German:', teamMemberDE);
+//console.log('Chinese:', teamMemberZH_CN);
+
+</script>
