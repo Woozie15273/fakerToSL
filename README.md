@@ -1,3 +1,6 @@
+## Preview:
+Link https://woozie15273.github.io/fakerToSL/
+
 ## /fakerJSLauncher/index.html
 ```js
 <script type="module">
