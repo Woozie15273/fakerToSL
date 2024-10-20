@@ -182,7 +182,7 @@ const imageAttacher = new ImageAttacher(player); // Create a new instance of Ima
 imageAttacher.attachAllImages(); // Attach all images
 ```
 
-JS Trigger - Dice (Need another trigger to jump to this slide itself when clicks dice):
+## JS Trigger - Dice (Need another trigger to jump to this slide itself when clicks dice):
 ```js
 // Select the element with the specified data-model-id
 const webObject = document.querySelector('[data-model-id="6lzfSZO5e0z"]');
